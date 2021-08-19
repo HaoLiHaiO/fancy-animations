@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .small-circle {
+  margin: 100px auto;
+  height: 100px;
+  width: 100px;
+  background-color: #B1B3B3;
+  border-radius: 50%;
+  transition: transform 3s;
+  /* Change Rotation Point Below */
+  transform-origin: bottom;
+}
+
+.large-circle:hover .small-circle {
+  transform: rotate(720deg);
+}
+
+.large-circle {
+  margin: 100px auto;
+  width: 200px;
+  height: 200px;
+  background-color: #89ABE3;
+  border-radius: 50%;
+}
+
+body {
+  background-color: #FCF6F5;
+}
+    </style>
+</head>
+<body>
+ 
+    
+    <div class="large-circle"><div class="small-circle"></div></div>
+
+</body>
+</html>

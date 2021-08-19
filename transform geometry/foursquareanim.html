@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .large-square:hover .corner {
+  /* Add Transforms Below */
+  transform: scale(2) translate(20px, 20px);
+}
+
+.corner {
+  width: 25px;
+  height: 25px;
+  background-color: #B1B3B3;
+  border-radius: 10%;
+  position: absolute;
+  transition: transform 2s;
+}
+
+.large-square {
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: #89ABE3;
+  border-radius: 5%;
+}
+
+.corner1 {
+  margin: 15px 15px;
+}
+
+.corner2 {
+  margin: 15px 60px;
+}
+
+.corner3 {
+  margin: 60px 15px;
+}
+
+.corner4 {
+  margin: 60px 60px;
+}
+    </style>
+</head>
+<body>
+    
+
+    <div class="large-square">
+        <div class="corner corner1">
+        </div>
+        <div class="corner corner2">
+        </div>
+        <div class="corner corner3">
+        </div>
+        <div class="corner corner4">
+        </div>
+      </div>
+
+</body>
+</html>
