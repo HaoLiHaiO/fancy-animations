@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.word1 {
+  color: #963CBDFF;
+  height: 450px;
+  animation: textRotate 8s alternate 5s;
+
+}
+
+.word2 {
+  color: #FF6F61FF;
+  height: 350px;
+  animation: textRotate 8s reverse 2s;
+}
+
+.word3 {
+  color: #C5299BFF;
+  height: 250px;
+  animation: textRotate 8s alternate-reverse 1s;
+}
+
+@keyframes textRotate{
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+.word {
+  width: 400;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24;
+  bottom: 0;
+  transform-origin: bottom;
+  transform: rotate(180deg);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+body {
+  background-color: #FFE6FF;
+  overflow: hidden
+}
+    </style>
+</head>
+<body>
+    
+    <div class="word word1">You're doing great!</div>
+    <div class="word word2">Great Word!</div>
+    <div class="word word3">Almost there!</div>
+
+
+</body>
+</html>

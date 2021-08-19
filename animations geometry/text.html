@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .x-axis {
+  /* add animation below */
+  animation: rightLeft 2s;
+}
+
+.y-axis {
+  /* add animation below */
+  animation: upDown 1s;
+}
+
+@keyframes rightLeft {
+  30% {
+    transform: translate(50px, 0px);
+  }
+  70% {
+    transform: translate(-50px, 0px);
+  }
+}
+
+@keyframes upDown {
+  30% {
+    transform: translate(0px, -25px);
+  }
+  70% {
+    transform: translate(0px, 25px);
+  }
+}
+
+.text {
+  margin: 50 75;
+  font-family: 'calibri';
+  font-weight: bold;
+  font-size: 48px;
+  color: #2BAE66;
+}
+
+body {
+  background-color: #FCF6F5;
+}
+    </style>
+</head>
+<body>
+    
+
+    <div class="text x-axis">Hello my friend!</div>
+    <div class="text y-axis">Goodbye my dear friend!</div>
+
+</body>
+</html>
